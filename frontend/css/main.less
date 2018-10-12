@@ -82,6 +82,15 @@
 .notes-section {
   padding: 100px;
   .notes {
+    i {
+      color: @red;
+      font-size: 22px;
+    }
+    .notes-list {
+      overflow: scroll;
+      overflow-x: hidden;
+      height: 340px;
+    }
     h1 {
       color: @red;
       font-family: 'Source Sans Pro', sans-serif;
@@ -118,6 +127,9 @@
   }
   .note {
     padding-left: 100px;
+    .note-content {
+      display: none;
+    }
     .note-info {
       padding-bottom: 20px;
       h1 {
@@ -127,14 +139,57 @@
         font-size: 24px;
         margin: 0;
         padding-bottom: 5px;
-        span {
-          font-family: 'Lato', sans-serif;
-          margin: 0;
-          font-size: 14px;
-          padding-left: 10px;
-          color: #000;
-        }
+      }
+      span {
+        font-family: 'Lato', sans-serif;
+        margin: 0;
+        font-size: 14px;
+        color: #000;
       }
     }
+    .note-click-info {
+      padding-top: 100px;
+      .center;
+      h1 {
+        color: @red;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-weight: 700;
+        font-size: 24px;
+        margin: 0;
+        padding-bottom: 5px;
+      }
+      h3 {
+        color: @red;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-weight: 700;
+        font-size: 18px;
+        margin: 0;
+      }
+    }
+  }
+}
+
+.notes-heading {
+  height: 61px;
+  line-height: 61px;
+  a {
+    color: @red;
+    font-size: 22px;
+  }
+  .center;
+  h1 {
+    height: 61px;
+    line-height: 61px;
+    color: @red;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+    padding-bottom: 20px;
+    text-align: left;
+  }
+  .dropdown-menu {
+    margin-top: 10px;
+    width: 300px;
+    padding: 10px;
   }
 }

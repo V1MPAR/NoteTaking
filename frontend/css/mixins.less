@@ -17,10 +17,20 @@
   &:hover {
     background: @red;
     transition-duration: 0.15s;
+    color: #fff;
     i {
       color: #fff;
     }
   }
+  &:focus {
+    box-shadow: none !important;
+  }
+}
+
+.outline-red {
+  background: transparent;
+  border: @red 1px solid !important;
+  border-radius: 0.25rem;
   &:focus {
     box-shadow: none !important;
   }
@@ -40,4 +50,26 @@
 
 .center {
   text-align: center;
+}
+
+.chevron-none::after {
+  display: none;
+}
+
+// Scrollbar for Notes
+#scrollbarNotes::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: none;
+	background-color: transparent;
+}
+
+#scrollbarNotes::-webkit-scrollbar
+{
+	width: 6px;
+	background-color: #F5F5F5;
+}
+
+#scrollbarNotes::-webkit-scrollbar-thumb
+{
+	background-color: @red;
 }
