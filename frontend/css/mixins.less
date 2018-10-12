@@ -1,0 +1,24 @@
+.input-outline-red {
+  background: transparent;
+  border: @red 1px solid !important;
+  border-radius: 0.25rem;
+  &:focus {
+    box-shadow: none !important;
+  }
+}
+
+.btn-outline-red {
+  background: transparent;
+  border: @red 1px solid !important;
+  border-radius: 0.25rem;
+  i {
+    color: @red;
+  }
+  &:hover {
+    background: @red;
+    transition-duration: 0.15s;
+    i {
+      color: #fff;
+    }
+  }
+}
