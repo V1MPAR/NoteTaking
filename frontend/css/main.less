@@ -47,6 +47,11 @@
 .main-footer {
   text-align: center;
   color: @red;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 20px 0;
 }
 
 .login-form {
@@ -70,6 +75,66 @@
     border-color: @red;
     i {
       color: @red;
+    }
+  }
+}
+
+.notes-section {
+  padding: 100px;
+  .notes {
+    h1 {
+      color: @red;
+      font-family: 'Source Sans Pro', sans-serif;
+      font-weight: 700;
+      font-size: 28px;
+      padding-bottom: 20px;
+    }
+    .note-item {
+      cursor: pointer;
+      margin-bottom: 20px;
+      padding: 10px;
+      p {
+        font-family: 'Lato', sans-serif;
+        margin: 0;
+      }
+      h1 {
+        color: @red;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-weight: 700;
+        font-size: 18px;
+        margin: 0;
+        padding-bottom: 5px;
+      }
+      i {
+        height: 50px;
+        line-height: 50px;
+        color: @red;
+        font-size: 22px;
+      }
+      &:hover {
+        background: #ddd;
+      }
+    }
+  }
+  .note {
+    padding-left: 100px;
+    .note-info {
+      padding-bottom: 20px;
+      h1 {
+        color: @red;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-weight: 700;
+        font-size: 24px;
+        margin: 0;
+        padding-bottom: 5px;
+        span {
+          font-family: 'Lato', sans-serif;
+          margin: 0;
+          font-size: 14px;
+          padding-left: 10px;
+          color: #000;
+        }
+      }
     }
   }
 }
