@@ -26,7 +26,7 @@
             <a href="<?= SITE_PATH; ?>"><i class="far fa-sticky-note"></i></a>
           </div>
           <div class="col-md-3 d-none d-md-block login">
-            <a href="<?= SITE_PATH; ?>"><i class="fas fa-sign-in-alt"></i></a>
+            <a href="<?= SITE_PATH; ?>login"><i class="fas fa-sign-in-alt"></i></a>
           </div>
         </div>
       </header>

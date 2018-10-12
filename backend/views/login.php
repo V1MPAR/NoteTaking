@@ -25,6 +25,33 @@
         </div>
       </header>
 
+      <section class="login-form">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-4 offset-md-4">
+              <h1>Log in</h1>
+              <form method="post" action="<?= SITE_PATH; ?>login/loginAction">
+                <div class="col-12 col-md-12 mb-3 input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon1"><i class="fas fa-envelope"></i></span>
+                  </div>
+                  <input type="email" class="form-control" placeholder="Email" aria-label="Email" aria-describedby="basic-addon1" name="email">
+                </div>
+                <div class="col-12 col-md-12 mb-3 input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text"><i class="fas fa-key"></i></span>
+                  </div>
+                  <input type="password" class="form-control" placeholder="Password" aria-label="Password" name="password">
+                </div>
+                <div class="col-12 col-md-12 mb-3 input-group">
+                  <button class="btn btn-red" type="submit" name="login">Log in</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <footer class="main-footer">
         <p>Note Taking &copy; <?= date('Y'); ?></p>
       </footer>

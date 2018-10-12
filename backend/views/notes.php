@@ -33,7 +33,7 @@
           <div class="col-md-3 d-none d-md-block user">
             <div class="dropdown">
               <a class="dropdown-toggle" href="#" id="userDropdownLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                johndoe@notetaking.com
+                <?= $_SESSION['userEmail']; ?>
               </a>
               <div class="dropdown-menu user-dropdown" aria-labelledby="userDropdownLink">
                 <a class="dropdown-item" href="<?= SITE_PATH; ?>notes/settings">Settings</a>

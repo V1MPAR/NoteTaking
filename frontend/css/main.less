@@ -48,3 +48,28 @@
   text-align: center;
   color: @red;
 }
+
+.login-form {
+  padding-top: 100px;
+  padding-bottom: 250px;
+  h1 {
+    color: @red;
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+    padding-bottom: 20px;
+  }
+  .form-control {
+    border-color: @red;
+    &:focus {
+      box-shadow: none !important;
+    }
+  }
+  .input-group-text {
+    border-color: @red;
+    i {
+      color: @red;
+    }
+  }
+}
