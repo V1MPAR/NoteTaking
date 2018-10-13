@@ -32,12 +32,22 @@
               <h1>Log in</h1>
               <form method="post" action="<?= SITE_PATH; ?>login/loginAction">
                 <div class="col-12 col-md-12 mb-3 input-group">
+                  <div class="col-12 padding-0">
+                    <?php if ( isset ( $_SESSION['emailError'] ) ) { ?>
+                      <p><?= $_SESSION['emailError']; ?></p>
+                    <?php } ?>
+                  </div>
                   <div class="input-group-prepend">
                     <span class="input-group-text" id="basic-addon1"><i class="fas fa-envelope"></i></span>
                   </div>
                   <input type="email" class="form-control" placeholder="Email" aria-label="Email" aria-describedby="basic-addon1" name="email">
                 </div>
                 <div class="col-12 col-md-12 mb-3 input-group">
+                  <div class="col-12 padding-0">
+                    <?php if ( isset ( $_SESSION['passwordError'] ) ) { ?>
+                      <p><?= $_SESSION['passwordError']; ?></p>
+                    <?php } ?>
+                  </div>
                   <div class="input-group-prepend">
                     <span class="input-group-text"><i class="fas fa-key"></i></span>
                   </div>
