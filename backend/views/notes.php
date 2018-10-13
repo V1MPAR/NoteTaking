@@ -43,7 +43,7 @@
                 <?= $_SESSION['userEmail']; ?>
               </a>
               <div class="dropdown-menu user-dropdown" aria-labelledby="userDropdownLink">
-                <a class="dropdown-item" href="<?= SITE_PATH; ?>notes/settings">Settings</a>
+                <a class="dropdown-item" href="#">Settings</a>
                 <a class="dropdown-item" href="<?= SITE_PATH; ?>notes/logout">Logout</a>
               </div>
             </div>
