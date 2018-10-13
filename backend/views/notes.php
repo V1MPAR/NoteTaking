@@ -112,6 +112,17 @@
               <div class="note-content">
                 <div class="note-info">
                   <h1 id="note-title"></h1>
+                  <div class="form-group" id="note-title-edit-form">
+                    <div class="row">
+                      <div class="col-4">
+                        <input class="form-control outline-red" type="text" id="note-title-edit" />
+                      </div>
+                      <div class="col-8">                        
+                        <button class="btn btn-default" type="button" id="cancelEditTitle">Cancel</button>
+                        <button class="btn btn-red-without-100-w" type="button" id="editTitle" noteid="">Edit Title</button>
+                      </div>
+                    </div>
+                  </div>
                   <span id="note-date"></span>
                 </div>
                 <p id="note-content"></p>

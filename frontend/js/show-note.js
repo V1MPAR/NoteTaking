@@ -6,6 +6,7 @@ $(document).ready(function(){
     var title = $(this).attr('notetitle');
     var date = $(this).attr('notedate');
     var content = $(this).attr('notecontent');
+    $('#editTitle').attr('noteid', id);
     $('#editNote').attr('noteid', id);
     $('.note-content').show();
     $('.note-click-info').hide();

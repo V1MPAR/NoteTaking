@@ -51,6 +51,18 @@
 
       }
 
+      if ( $this -> params[1] == 'editTitle' ) {
+
+        $content = htmlentities($_POST['content'], ENT_QUOTES, "UTF-8");
+        $id = htmlentities($_POST['id'], ENT_QUOTES, "UTF-8");
+
+        $editNoteQuery = $this -> model -> db -> prepare('UPDATE notes SET title = :title WHERE id = :id');
+        $editNoteQuery->bindValue(':title', $content, PDO::PARAM_STR);
+        $editNoteQuery->bindValue(':id', $id, PDO::PARAM_STR);
+        $editNoteQuery->execute();
+
+      }
+
       if ( $this -> params[1] == 'deleteNote' ) {
 
         $id = htmlentities($_POST['id'], ENT_QUOTES, "UTF-8");
