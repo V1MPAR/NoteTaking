@@ -18,6 +18,10 @@ $(document).ready(function(){
       $('#note-content').text('Click here to edit the note');
     }
 
+      $('html, body').animate({
+        scrollTop: $('.note-content').offset().top
+      }, 500);
+
   });
 
 });

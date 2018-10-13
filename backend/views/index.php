@@ -19,13 +19,13 @@
 
       <header class="main-header">
         <div class="row" style="margin: 0;">
-          <div class="col-md-3 d-none d-md-block notes">
+          <div class="col-md-3 col-12 notes">
             <p id="notes"></p>
           </div>
           <div class="col-12 col-md-6 logo">
             <a href="<?= SITE_PATH; ?>"><i class="far fa-sticky-note"></i></a>
           </div>
-          <div class="col-md-3 d-none d-md-block login">
+          <div class="col-md-3 col-12 login">
             <?php if ( isset ($_SESSION['userLogged']) ) { ?>
               <a href="<?= SITE_PATH; ?>notes" class="index-user-link"><?= $_SESSION['userEmail']; ?></a>
             <?php } else { ?>

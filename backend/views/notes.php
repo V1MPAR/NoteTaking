@@ -39,7 +39,7 @@
           <div class="col-12 col-md-6 logo">
             <a href="<?= SITE_PATH; ?>"><i class="far fa-sticky-note"></i></a>
           </div>
-          <div class="col-md-3 d-none d-md-block user">
+          <div class="col-12 col-md-3 user">
             <div class="dropdown">
               <a class="dropdown-toggle" href="#" id="userDropdownLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <?= $_SESSION['userEmail']; ?>
@@ -59,10 +59,10 @@
 
             <div class="col-12 col-md-4 notes">
               <div class="row">
-                <div class="col-9 notes-heading">
+                <div class="col-8 col-md-10 notes-heading">
                   <h1>Notes</h1>
                 </div>
-                <div class="col-3 notes-heading">
+                <div class="col-2 col-md-1 notes-heading">
                   <div class="dropdown">
                     <a class="dropdown-toggle chevron-none" href="#" role="button" id="dropdownAddNote" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       <i class="fas fa-plus"></i>
@@ -77,6 +77,10 @@
                       </div>
                     </div>
                   </div>
+                </div>
+                <div class="col-2 col-md-1 notes-heading">
+                  <i class="fas fa-chevron-up" id="hideNotes"></i>
+                  <i class="fas fa-chevron-down" id="showNotes"></i>
                 </div>
               </div>
 
@@ -105,7 +109,8 @@
             <div class="col-12 col-md-8 note">
 
               <div class="note-click-info">
-                <h1>Select a note from the left to preview it</h1>
+                <h1 class="d-none d-md-block">Select a note from the left to preview it</h1>
+                <h1 class="d-md-none">Select a note from the up to preview it</h1>
                 <h3>You don't have any notes yet? Create it.</h3>
               </div>
 
@@ -114,10 +119,10 @@
                   <h1 id="note-title"></h1>
                   <div class="form-group" id="note-title-edit-form">
                     <div class="row">
-                      <div class="col-4">
+                      <div class="col-12">
                         <input class="form-control outline-red" type="text" id="note-title-edit" />
                       </div>
-                      <div class="col-8">                        
+                      <div class="col-12 padding-top-m">
                         <button class="btn btn-default" type="button" id="cancelEditTitle">Cancel</button>
                         <button class="btn btn-red-without-100-w" type="button" id="editTitle" noteid="">Edit Title</button>
                       </div>
@@ -154,6 +159,7 @@
     <script src="<?= SITE_PATH; ?>frontend/js/add-note.js?<?= time(); ?>"></script>
     <script src="<?= SITE_PATH; ?>frontend/js/delete-note.js?<?= time(); ?>"></script>
     <script src="<?= SITE_PATH; ?>frontend/js/edit-note.js?<?= time(); ?>"></script>
+    <script src="<?= SITE_PATH; ?>frontend/js/hide-notes.js?<?= time(); ?>"></script>
 
   </body>
 </html>
