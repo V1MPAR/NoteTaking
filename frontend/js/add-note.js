@@ -7,7 +7,7 @@ $(document).ready(function(){
     if (title.val().length > 0) {
       $.ajax({
         type: "POST",
-        url: "http://192.168.100.139/NoteTaking/ajax/addNote",
+          url: SITE_PATH + "ajax/addNote",
         dataType : 'json',
         data: {
             ajax : 'addNote',

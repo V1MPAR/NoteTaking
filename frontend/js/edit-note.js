@@ -51,7 +51,7 @@ $(document).ready(function(){
     var content = $('#note-title-edit').val();
     $.ajax({
       type: "POST",
-      url: "http://192.168.100.139/NoteTaking/ajax/editTitle",
+      url: SITE_PATH + "ajax/editTitle",
       dataType : 'json',
       data: {
           ajax : 'editTitle',
@@ -73,7 +73,7 @@ $(document).ready(function(){
     var content = $('#note-content-edit').val();
     $.ajax({
       type: "POST",
-      url: "http://192.168.100.139/NoteTaking/ajax/editNote",
+      url: SITE_PATH + "ajax/editNote",
       dataType : 'json',
       data: {
           ajax : 'editNote',

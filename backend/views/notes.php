@@ -155,6 +155,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <script src="<?= SITE_PATH; ?>node_modules/trumbowyg/dist/trumbowyg.min.js?<?= time(); ?>"></script>
 
+    <script src="<?= SITE_PATH; ?>frontend/config/config.js?<?= time(); ?>"></script>
     <script src="<?= SITE_PATH; ?>frontend/js/show-note.js?<?= time(); ?>"></script>
     <script src="<?= SITE_PATH; ?>frontend/js/add-note.js?<?= time(); ?>"></script>
     <script src="<?= SITE_PATH; ?>frontend/js/delete-note.js?<?= time(); ?>"></script>

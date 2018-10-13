@@ -6,7 +6,7 @@ $(document).ready(function(){
 
       $.ajax({
         type: "POST",
-        url: "http://192.168.100.139/NoteTaking/ajax/deleteNote",
+        url: SITE_PATH + "ajax/deleteNote",
         dataType : 'json',
         data: {
             ajax : 'deleteNote',
