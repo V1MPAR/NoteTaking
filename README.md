@@ -8,15 +8,15 @@ To transfer a project to your server, simply download the stable master version 
 
 ### Installing
 
-Step 1 - download master version Note Taking App ([click](https://github.com/V1MPAR/NoteTaking/archive/master.zip))
+*Step 1* - download master version Note Taking App ([click](https://github.com/V1MPAR/NoteTaking/archive/master.zip))
 
-Step 2 - fill in the config.php file with your data (backend/config/config.php)
+*Step 2* - fill in the config.php file with your data (backend/config/config.php)
 
-Step 3 - fill in the config.js file with your data (frontend/config/config.js)
+*Step 3* - fill in the config.js file with your data (frontend/config/config.js)
 
-Step 4 - import the NoteTaking database (notetaking.sql)
+*Step 4* - import the NoteTaking database (notetaking.sql)
 
-and it's ready!
+*and it's ready!*
 
 ## Authors
 
