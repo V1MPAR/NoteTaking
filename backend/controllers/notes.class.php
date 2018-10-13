@@ -31,6 +31,7 @@
 
     private function logout() {
       unset($_SESSION['userLogged']);
+      unset($_SESSION['userEmail']);
       header('Location: ' . SITE_PATH);
     }
 

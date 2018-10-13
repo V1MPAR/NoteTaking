@@ -46,6 +46,9 @@
                 <div class="col-12 col-md-12 mb-3 input-group">
                   <button class="btn btn-red" type="submit" name="login">Log in</button>
                 </div>
+                <div class="col-12 center">
+                  <a href="<?= SITE_PATH; ?>register">You don't have account yet?</a>
+                </div>
               </form>
             </div>
           </div>

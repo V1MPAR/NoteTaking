@@ -20,7 +20,7 @@
         require_once $file;
         $this -> control = new $this -> controller($this -> params);
       } else {
-        header('Location: http://192.168.100.139/BudgetControl/notfound');
+        header('Location: ' . SITE_PATH . 'notfound');
       }
 
     }

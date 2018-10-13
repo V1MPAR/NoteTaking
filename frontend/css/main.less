@@ -77,6 +77,46 @@
       color: @red;
     }
   }
+  a {
+    color: @red;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+.register-form {
+  padding-top: 100px;
+  padding-bottom: 250px;
+  p {
+    color: @red;
+  }
+  h1 {
+    color: @red;
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+    padding-bottom: 20px;
+  }
+  .form-control {
+    border-color: @red;
+    &:focus {
+      box-shadow: none !important;
+    }
+  }
+  .input-group-text {
+    border-color: @red;
+    i {
+      color: @red;
+    }
+  }
+  a {
+    color: @red;
+    &:hover {
+      text-decoration: none;
+    }
+  }
 }
 
 .notes-section {
@@ -145,6 +185,12 @@
         margin: 0;
         font-size: 14px;
         color: #000;
+      }
+    }
+    p {
+      margin: 0 !important;
+      b {
+        color: @red;
       }
     }
     .note-click-info {

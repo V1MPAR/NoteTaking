@@ -1,11 +1,19 @@
 $(document).ready(function(){
 
+  $('#note-content-edit').trumbowyg({
+    btns: [['strong', 'em',], ['insertImage']]
+  });
+
+  $('.editor-modern-ui').trumbowyg({
+    prefix: 'modern-ui'
+  });
+
   $('#note-content').on('click', function(){
 
-    var content = $('#note-content').text();
+    var content = $('#note-content').html();
     $('#note-content').hide();
     $('#note-content-edit-form').show();
-    $('#note-content-edit').show().val(content);
+    $('#note-content-edit').trumbowyg('html', content);
 
   });
 

@@ -11,7 +11,7 @@ $(document).ready(function(){
     $('.note-click-info').hide();
     $('#note-title').text(title);
     $('#note-date').text(date);
-    $('#note-content').text(content);
+    $('#note-content').html(content);
     $('#note-content-edit').val(content);
     if ( content == false ) {
       $('#note-content').text('Click here to edit the note');
