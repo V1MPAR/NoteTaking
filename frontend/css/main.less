@@ -44,6 +44,13 @@
   }
 }
 
+.index-user-link {
+    font-size: 16px !important;
+    &:hover {
+      text-decoration: none;
+    }
+}
+
 .main-footer {
   text-align: center;
   color: @red;
@@ -129,7 +136,7 @@
     .notes-list {
       overflow: scroll;
       overflow-x: hidden;
-      height: 340px;
+      height: 540px;
     }
     h1 {
       color: @red;
@@ -189,6 +196,18 @@
     }
     p {
       margin: 0 !important;
+      a {
+        color: @red;
+        border-bottom: 1px solid @red;
+        &:hover {
+          text-decoration: none;
+        }
+      }
+      h1, h2, h3, h4 {
+        color: @red;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-weight: 700;
+      }
       b {
         color: @red;
       }

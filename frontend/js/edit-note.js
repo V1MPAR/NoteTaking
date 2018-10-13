@@ -1,7 +1,17 @@
 $(document).ready(function(){
 
   $('#note-content-edit').trumbowyg({
-    btns: [['strong', 'em',], ['insertImage']]
+    semantic: false,
+    btns: [
+      ['formatting'],
+      ['strong', 'em', 'underline', 'del'],
+      ['superscript', 'subscript'],
+      ['link'],
+      ['justifyLeft', 'justifyCenter', 'justifyRight', 'justifyFull'],
+      ['unorderedList', 'orderedList'],
+      ['removeformat'],
+      ['fullscreen']
+    ]
   });
 
   $('.editor-modern-ui').trumbowyg({

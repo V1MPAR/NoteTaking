@@ -26,7 +26,11 @@
             <a href="<?= SITE_PATH; ?>"><i class="far fa-sticky-note"></i></a>
           </div>
           <div class="col-md-3 d-none d-md-block login">
-            <a href="<?= SITE_PATH; ?>login"><i class="fas fa-sign-in-alt"></i></a>
+            <?php if ( isset ($_SESSION['userLogged']) ) { ?>
+              <a href="<?= SITE_PATH; ?>notes" class="index-user-link"><?= $_SESSION['userEmail']; ?></a>
+            <?php } else { ?>
+              <a href="<?= SITE_PATH; ?>login"><i class="fas fa-sign-in-alt"></i></a>
+            <?php } ?>
           </div>
         </div>
       </header>
