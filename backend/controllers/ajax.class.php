@@ -24,8 +24,29 @@
 
     private function ajax($ajax) {
 
-      if ( $this -> params[1] == 'test' ) {
-        echo 'ajaxTest';
+      if ( $this -> params[1] == 'addNote' ) {
+
+        $title = htmlentities($_POST['title'], ENT_QUOTES, "UTF-8");
+
+        $insertNoteQuery = $this -> model -> db -> prepare('INSERT INTO notes (id, title, content, date, email) VALUES(:id, :title, :content, :date, :email)');
+        $insertNoteQuery->execute([
+            'id' => NULL,
+            'title' => $title,
+            'content' => '',
+            'date' => date('Y-m-d'),
+            'email' => $_SESSION['userEmail']
+        ]);
+
+      }
+
+      if ( $this -> params[1] == 'deleteNote' ) {
+
+        $id = htmlentities($_POST['id'], ENT_QUOTES, "UTF-8");
+
+        $deleteNoteQuery = $this -> model -> db -> prepare('DELETE FROM notes WHERE id = :id');
+        $deleteNoteQuery->bindValue(':id', $id, PDO::PARAM_STR);
+        $deleteNoteQuery->execute();
+
       }
 
     }

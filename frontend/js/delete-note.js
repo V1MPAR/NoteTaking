@@ -1,17 +1,16 @@
 $(document).ready(function(){
 
-  $('#addNote').on('click', function(){
+  $('.deleteNote').on('click', function(){
 
-    var title = $('#noteTitleInput');
+    var id = $(this).attr('noteid');
 
-    if (title.val().length > 0) {
       $.ajax({
         type: "POST",
-        url: "http://192.168.100.139/NoteTaking/ajax/addNote",
+        url: "http://192.168.100.139/NoteTaking/ajax/deleteNote",
         dataType : 'json',
         data: {
-            ajax : 'addNote',
-            title : title.val()
+            ajax : 'deleteNote',
+            id : id
         },
         success: function() {
         },
@@ -21,7 +20,6 @@ $(document).ready(function(){
         error: function() {
         }
       });
-    }
 
   });
 
