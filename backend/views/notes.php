@@ -82,7 +82,7 @@
 
                 <?php for ( $i = 0; $i < $notes -> notesCount; $i++ ) { ?>
 
-                <div class="note-item" notetitle="<?= $notes -> noteTitle[$i]; ?>" notedate="<?= $notes -> noteDate[$i]; ?>" notecontent="<?= $notes -> noteContent[$i]; ?>">
+                <div class="note-item" noteid="<?= $notes -> noteId[$i]; ?> notetitle="<?= $notes -> noteTitle[$i]; ?>" notedate="<?= $notes -> noteDate[$i]; ?>" notecontent="<?= $notes -> noteContent[$i]; ?>">
                   <div class="row">
                     <div class="col-9">
                       <p><?= $notes -> noteDate[$i]; ?></p>
@@ -113,6 +113,11 @@
                   <span id="note-date"></span>
                 </div>
                 <p id="note-content"></p>
+                <div class="form-group" id="note-content-edit-form">
+                  <textarea class="form-control outline-red" rows="5" id="note-content-edit"></textarea>
+                  <button class="btn btn-default" type="button" id="cancelEditNote">Cancel</button>
+                  <button class="btn btn-red-without-100-w" type="button" id="editNote" noteid="">Edit Note</button>
+                </div>
               </div>
 
             </div>
@@ -134,6 +139,7 @@
     <script src="<?= SITE_PATH; ?>frontend/js/show-note.js?<?= time(); ?>"></script>
     <script src="<?= SITE_PATH; ?>frontend/js/add-note.js?<?= time(); ?>"></script>
     <script src="<?= SITE_PATH; ?>frontend/js/delete-note.js?<?= time(); ?>"></script>
+    <script src="<?= SITE_PATH; ?>frontend/js/edit-note.js?<?= time(); ?>"></script>
 
   </body>
 </html>
