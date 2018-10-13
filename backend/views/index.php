@@ -35,6 +35,18 @@
         </div>
       </header>
 
+      <section class="introduce">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12">
+              <h1>Clean notebook</h1>
+              <h3>for <strike>the rich</strike> everyone!</h3>
+              <a href="<?= SITE_PATH; ?>register" class="btn btn-outline-red">Get started</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <footer class="main-footer">
         <p>Note Taking - Created by Mateusz Domurad &copy; <?= date('Y'); ?></p>
       </footer>
