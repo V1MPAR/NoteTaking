@@ -32,7 +32,7 @@
       </header>
 
       <footer class="main-footer">
-        <p>Note Taking &copy; <?= date('Y'); ?></p>
+        <p>Note Taking - Created by Mateusz Domurad &copy; <?= date('Y'); ?></p>
       </footer>
 
     </div>
