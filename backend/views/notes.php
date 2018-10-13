@@ -82,7 +82,7 @@
 
                 <?php for ( $i = 0; $i < $notes -> notesCount; $i++ ) { ?>
 
-                <div class="note-item" noteid="<?= $notes -> noteId[$i]; ?> notetitle="<?= $notes -> noteTitle[$i]; ?>" notedate="<?= $notes -> noteDate[$i]; ?>" notecontent="<?= $notes -> noteContent[$i]; ?>">
+                <div class="note-item" noteid="<?= $notes -> noteId[$i]; ?>" notetitle="<?= $notes -> noteTitle[$i]; ?>" notedate="<?= $notes -> noteDate[$i]; ?>" notecontent="<?= $notes -> noteContent[$i]; ?>">
                   <div class="row">
                     <div class="col-9">
                       <p><?= $notes -> noteDate[$i]; ?></p>
