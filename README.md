@@ -2,6 +2,10 @@
 
 A simple and transparent notebook online
 
+## Reviews
+
+**Michał Lipek** - "It's OK. The app works, looks good. [...] The project is a good start to work in PHP."
+
 ## Getting Started
 
 To transfer a project to your server, simply download the stable master version and follow the steps below
